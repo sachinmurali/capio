@@ -7,7 +7,7 @@ app = Flask(__name__, static_url_path='/files/')
 Bootstrap(app)
 app.secret_key = 'development key'
 
-app.run()
+app.run(debug=True,host='0.0.0.0')
 @app.route("/")
 def index():
     form = GetKeyTransactionIdForm()
