@@ -8,7 +8,7 @@
         {{ message }}
     {% endfor %}
     {{ form.csrf_token }}
-    <form action="{{url_for('getDocument')}}" class="form-horizontal" method="POST">    
+    <form action="{{url_for('get_document')}}" class="form-horizontal" method="POST">    
         {{ form.hidden_tag() }}
         <div class="heading">
             <h4 class="form-heading">Get the Document from CAPIO!</h4>
