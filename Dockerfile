@@ -12,4 +12,5 @@ RUN git clone https://github.com/sachinmurali/capio.git
 RUN virtualenv --python=/usr/bin/python2.7 venv && source venv/bin/activate && cd capio && pip install -r requirements.txt
 
 WORKDIR /home/capio_challenge/capio/src/
-CMD ["FLASK_APP=app.py flask run"]
+#CMD ["FLASK_APP=app.py flask run"]
+CMD ["python", "src/app.py"]
