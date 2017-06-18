@@ -1,6 +1,6 @@
 # capio
 
-The objective here is to create a Python app/script to process Capio's speech recognition results into a word document. 
+The objective here is to create a Python app/script to process Capio's speech recognition results into a word document. You would need Python 2.7.
 
 In order to run the app, first create a virtual environment. You can create a virtual environment using the virtualenv library in Python:
 
