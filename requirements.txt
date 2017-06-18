@@ -10,7 +10,6 @@ itsdangerous==0.24
 Jinja2==2.9.6
 lxml==3.8.0
 MarkupSafe==1.0
-pyspark==2.1.0+hadoop2.7
 python-docx==0.8.6
 requests==2.18.1
 urllib3==1.21.1
