@@ -12,11 +12,6 @@ def index():
     form = GetKeyTransactionIdForm()
     return render_template('index.html', form=form)
 
-# @app.route("/capio/", defaults={'transcript_id' : None})
-# @app.route("/capio/<transcript_id>")
-# def get_document(transcript_id):
-#     pass
-
 @app.route('/get_document/',methods=['POST'])
 def get_document():
     wex = WordExtractor()
