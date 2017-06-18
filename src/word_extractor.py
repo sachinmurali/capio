@@ -10,6 +10,9 @@ class WordExtractor:
 		self.key = "262ac9a0c9ba4d179aad4c0b9b02120a"
 		self.transcript_id = "593f237fbcae700012ba8fcd"
 
+	def set_key(self, api_key):
+		self.key = api_key
+
 	def set_transcript_id(self, transcript_id):
 		self.transcript_id = transcript_id
 
