@@ -7,7 +7,6 @@ app = Flask(__name__, static_url_path='/files/')
 Bootstrap(app)
 app.secret_key = 'development key'
 
-app.run(debug=True,host='0.0.0.0')
 @app.route("/")
 def index():
     form = GetKeyTransactionIdForm()
@@ -24,3 +23,6 @@ def get_document():
     doc = wex.write_transcript()
     doc.save(transactionId + '.docx')
     return send_from_directory('.', transactionId + '.docx', as_attachment=True, attachment_filename=transactionId + '.docx')
+
+if __name__ == '__main__':
+    app.run(debug=True,host='0.0.0.0')    
