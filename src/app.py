@@ -19,10 +19,10 @@ def index():
 
 @app.route('/get_document/',methods=['POST'])
 def get_document():
+    wex = WordExtractor()
     key = request.form['key']
     if key:
-        wex.set_key(key)
-    wex = WordExtractor()        
+        wex.set_key(key)        
     transactionId = request.form['transactionId']
     wex.set_transcript_id(transactionId)
     doc = wex.write_transcript()
